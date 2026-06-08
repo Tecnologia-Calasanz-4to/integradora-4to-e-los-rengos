@@ -1,13 +1,19 @@
+nombre=input("dame tu nombre:")
+arma=input("ingresa tu arma")
 def nombre_valido(nombre):
-    pass    # TODO: len(nombre) >= 2 and nombre.isalpha()
+    if nombre >= 3 and nombre.isalpha:
+        return(nombre)
 def crear_codename(nombre, nivel):
-    pass    # TODO: nombre[0:3].upper() + "-Lv" + str(nivel)
+    
+return    # TODO: nombre[0:3].upper() + "-Lv" + str(nivel)
 def vida_maxima(nivel):
     pass    # TODO: 100 + nivel ** 2 * 5
 
 # ===== PARTE B =====
+arma=input("ingresa un arma")
+print(arma)
 def clasificar_arma(poder):
-    pass    # TODO: if/elif/else -> "Legendaria"/"Media"/"Debil"
+    return    # TODO: if/elif/else -> "Legendaria"/"Media"/"Debil"
 def es_critico(es_magica, nivel):
     pass    # TODO: es_magica or nivel >= 10
 def dano_base(ataque, poder, defensa):
