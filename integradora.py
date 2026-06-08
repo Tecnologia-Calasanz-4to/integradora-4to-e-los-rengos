@@ -1,4 +1,4 @@
-nombre=input("dame tu nombre:")
+nombre=input("dame tu nombre:") Mateo y Luciano
 arma=input("ingresa tu arma")
 def nombre_valido(nombre):
     if nombre >= 3 and nombre.isalpha:
@@ -9,7 +9,7 @@ return    # TODO: nombre[0:3].upper() + "-Lv" + str(nivel)
 def vida_maxima(nivel):
     pass    # TODO: 100 + nivel ** 2 * 5
 
-# ===== PARTE B =====
+# ===== PARTE B ===== Sofìa y Lara
 arma=input("ingresa un arma")
 print(arma)
 def clasificar_arma(poder):
