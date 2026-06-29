@@ -1,4 +1,4 @@
-
+   
 def nombre_valido(nombre):
     if len(nombre) >= 3 and nombre.isalpha():
         devolver = True
@@ -25,11 +25,19 @@ def dano_total(ataque, poder, defensa, critico):
 
 # ===== PARTE C =====
 def porcentaje_vida(actual, maxima):
-    pass    # TODO: actual / maxima * 100
-def estado_vida(porcentaje):
-    pass    # TODO: if/elif/else -> "CRITICO"/"HERIDO"/"SANO"
+    porc= actual / maxima *100
+    return porc
+def estado_vida(porc):
+    if porc<=20:
+        return "critico"
+    elif porc<= 40:
+        return "herido"
+    else:
+        return "Sano"
 def comprar_pociones(monedas, precio):
-    pass    # TODO: monedas // precio  y  monedas % precio
+    cantidad= monedas//precio
+    vuelto= monedas%precio
+    return cantidad, vuelto
 
 # ===== PARTE D =====
 def puede_atacar(energia, esta_aturdido):
@@ -47,5 +55,6 @@ arma=input("ingresa tu arma")
 print("Nombre valido", nombre_valido(nombre))
 print("Codename",crear_codename(nombre, 100))
 print("Vida maxima",vida_maxima(10))
-arma=input("ingresa un arma")
-print(arma)
+print(porcentaje_vida(100, 1000))
+print(estado_vida(20))
+print(comprar_pociones(100, 80))
